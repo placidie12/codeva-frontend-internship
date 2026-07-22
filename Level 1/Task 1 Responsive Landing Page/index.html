@@ -6,6 +6,9 @@
     <title>TechNova</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link 
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css" 
+    rel="stylesheet">
 </head>
 <body>
 <nav class="navbar">
@@ -18,25 +21,27 @@
         <li><a href="#features">Services</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="menu-btn" id="humburger">
+    <div class="menu-btn" id="hamburger">
         <span></span>
         <span></span>
         <span></span>
     </div>
 </nav>
- <section id="home" class="hero">
+<section id="home" class="hero">
    <video autoplay muted loop id="myVideo">
-     <source src="videos/video 4.mp4" type="video/mp4">
+    <video autoplay muted loop poster="vidoes/technology.mp4"></video>
+     <source src="videos/technology.mp4" type="video/mp4">
    </video>
 
-<div class="overlay"> </div>
+   <div class="overlay"> 
    
         <h1>Innovate.Connect.Transform with Technology</h1>
         <P>We provide cutting-edge  technology solutions designed to simplify processes <br>
-    ,enhance productivity,and help organizations to adapt to the digital world. <br>
-    Our mission is to build reliable and user-friendly digital experiences.</P>
+        ,enhance productivity,and help organizations to adapt to the digital world. <br>
+        Our mission is to build reliable and user-friendly digital experiences.</P>
 
-    <a href="#" class="btn">Get Started</a>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
 </section>
 
 
@@ -55,7 +60,8 @@ We believe technology should be simple, accessible, and impactful. Our mission i
     <h2>Our Features</h2>
     <div class="feature-container">
 
-        <div class="card ">
+        <div class="card" data-aos="fade-up" >
+            <i class="fa-solid fa-code"></i>
             <h3>Web Development</h3>
            <p> We transform ideas into powerful digital
             solutions by developing custom websites
@@ -66,6 +72,7 @@ We believe technology should be simple, accessible, and impactful. Our mission i
 
         </div>
         <div class="card ">
+            <i class="fa-solid fa-code"></i>
             <h3>Mobile App Development</h3>
             <p>We design and develop powerful mobile applications 
             that provide smooth performance, engaging user experiences,
@@ -74,6 +81,7 @@ We believe technology should be simple, accessible, and impactful. Our mission i
 
         </div>
          <div class="card ">
+            <i class="fa-solid fa-code"></i>
             <h3>UI/UX Design</h3>
            <p> We create clean, modern, and intuitive user interfaces that
             focus on usability, accessibility, and delivering enjoyable
@@ -83,6 +91,7 @@ We believe technology should be simple, accessible, and impactful. Our mission i
 
          </div>
          <div class="card ">
+            <i class="fa-solid fa-code"></i>
            <h3>Cybersecurity Solutions</h3>
           <p> We protect digital systems, applications, and sensitive data by
             implementing advanced security practices that help prevent cyber
@@ -99,7 +108,7 @@ We believe technology should be simple, accessible, and impactful. Our mission i
     <p> Have a question or want to work with us?
         send us a message and we will get back at you.
     </p>
-<div class="conatct-container">
+<div class="contact-container">
     <div class="contact-info">
         <h3>Contact Information</h3>
         <p>Kigali,Rwanda</p>
@@ -107,13 +116,13 @@ We believe technology should be simple, accessible, and impactful. Our mission i
         <p>+0738490936</p>
     </div>
     
-    <form action="">
+    <form class="contact-form">
 
-        <input type="text" placeholder="your name">
+        <input type="text" placeholder="Your name">
         <input type="email" placeholder="Your email">
         <input type="text" placeholder="Subject">
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit"> Send Us Message</button>
+        <textarea placeholder="Your Message" rows="3"></textarea>
+        <button class="contact-btn">Send Us a Message</button>
     </form>
 </div>
 
@@ -130,7 +139,11 @@ We believe technology should be simple, accessible, and impactful. Our mission i
     </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
 
 
    

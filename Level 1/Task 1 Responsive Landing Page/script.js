@@ -1,13 +1,43 @@
-const menuBtn = document.querySelector("#humburger");
-const navLinks = document.querySelector("#navLinks");
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
 
-menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll",()=>{
+
+    if(window.scrollY > 50){
+        navbar.classList.add("scrolled");
+    }
+    else{
+        navbar.classList.remove("scrolled");
+    }
+
 });
 
-// Close menu when a link is clicked
-navLinks.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
+window.addEventListener("scroll", ()=>{
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if(scrollY >= sectionTop - 150){
+            current = section.getAttribute("id");
+        }
+
     });
+
+
+    navLinks.forEach(link =>{
+
+        link.classList.remove("active");
+
+        if(link.getAttribute("href") === "#" + current){
+            link.classList.add("active");
+        }
+
+    });
+
 });
