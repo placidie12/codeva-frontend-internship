@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Create an Account</h2>
+        <form id="registrationForm">
+
+          <label>Name</label> 
+          <input type="text" id="name"> 
+          <small id="nameError"></small>
+
+           <label>Email</label> 
+          <input type="email" id="email"> 
+          <small id="emailError"></small>
+
+           <label>PhoneNumber</label> 
+          <input type="text" id="phone"> 
+          <small id="phoneError"></small>
+
+
+           <label>Password</label> 
+          <input type="password" id="password"> 
+          <small id="passwordError"></small>
+
+          <button type="submit">Submit</button>
+          <p id="successMessage"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

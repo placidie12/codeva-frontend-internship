@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background: rgb(8, 126, 134);
+    padding: 100px;
+    width:400px ;
+    border-radius: 20px;
+    box-shadow: 0 0 10px gray;
+}
+h2{
+    text-align: center;
+}
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+input:focus{
+    border:2px solid #4CAF50;
+    box-shadow:0 0 8px rgba(76,175,80,.4);
+}
+button{
+   width: 100%;
+    padding: 12px;
+    background: rgb(255, 123, 0);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer; 
+    transition:0.3s;
+}
+button:hover{
+    background: rgba(223, 190, 8, 0.288);
+    transform: scale(1.02);
+}
+small{
+    color: rgba(240, 0, 0, 0.685);
+}
+#successMessage {
+    color:blue;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
