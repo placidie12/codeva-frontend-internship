@@ -1,5 +1,6 @@
 .skills {
   padding: 100px 8%;
+  delay: index*0.05;
 }
 
 .skills-grid {
