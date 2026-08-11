@@ -1,0 +1,11 @@
+#root {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+.section {
+  scroll-margin-top: 80px;
+}
