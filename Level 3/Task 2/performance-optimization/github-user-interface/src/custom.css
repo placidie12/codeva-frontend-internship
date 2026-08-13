@@ -1,0 +1,114 @@
+body{
+
+font-family:'Poppins',sans-serif;
+
+
+ background-color: #0d1117;
+
+}
+
+
+
+.navbar{
+
+background:#24292f;
+
+}
+
+
+
+.hero{
+
+padding:80px 20px;
+
+}
+
+
+
+.btn-success{
+
+background:#21612a;
+
+border:none;
+
+}
+
+
+
+.profile-card{
+    margin-top:60px;
+    width:350px;
+    min-height:400px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+
+
+.profile-image{
+    height:180px;
+    width:180px;
+    object-fit:cover;
+    border-radius:50%;
+    margin:20px auto;
+    display:block;
+}
+
+.profile-card .card-body{
+    text-align:center;
+}
+
+.profile-card .stats{
+    display:flex;
+    justify-content:space-around;
+    margin-top:20px;
+}
+
+.profile-card .stats h5{
+    color:white;
+    font-size:20px;
+}
+
+.profile-card .stats p{
+    color:#8b949e;
+    font-size:14px;
+}
+
+.about{
+    margin:60px auto;
+    max-width:600px;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.about p{
+    color:#8b949e;
+    line-height:1.8;
+}
+.about h2{
+    color:#58a6ff;
+}
+
+.about p{
+    color:#8b949e;
+    line-height:1.6;
+}
+
+
+
+.footer{
+
+background:#24292f;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+margin-top:80px;
+
+}
